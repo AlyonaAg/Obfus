@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Obfuscate</title>
+<style>
+   textarea {
+    width: 100%; /* Ширина поля в процентах */
+    height: 500px; /* Высота поля в пикселах */
+    resize: none; /* Запрещаем изменять размер */
+	border-radius: 8px;
+	font-family: 'Montserrat', sans-serif;
+  	font-size: 14px;
+	letter-spacing: 1px;
+	padding: 7px
+   } 
+   .h1 {
+	color: #fff;
+	background-color: #000
+   }
+.floating-button {
+  text-decoration: none;
+  display: inline-block;
+  width: 170px;
+  height: 40px;
+  line-height: 45px;
+  border-radius: 45px;
+  margin: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #524f4e;
+  background: white;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+  transition: .3s;
+}
+.floating-button:hover {
+  background: #51535c;
+  box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+  color: white;
+  transform: translateY(-7px);
+}
+</style>
+<link rel="stylesheet" type="text/css" href="style.css" >
+</head>
+
+<body bgcolor="#f5f5f5">
+<script type="text/javascript" src="obfus.js"></script>
+<script type="text/javascript" src="button.js"></script>
+<script type="text/javascript" src="rename.js"></script>
+<script type="text/javascript" src="cycles.js"></script>
+<script type="text/javascript" src="function.js"></script>
+<script type="text/javascript" src="branching.js"></script>
+
+<table width="100%" border="0">
+  <tbody>
+    <tr>
+      <td height="30">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+<table width="100%" border="0">
+  <tbody >
+    <tr>
+      <td height="300" align="center" valign="top" id="1" border="0"><table width="100%" height="300" border="0">
+        <tbody border="0">
+          <tr>
+            <td width="1%" bordercolor="">&nbsp;</td>
+            <td width="47%"><textarea id="textArea1" placeholder="Вставьте скрипт"></textarea></td>
+            <td width="4%">&nbsp;</td>
+            <td width="47%"><textarea id="textArea2" readonly="readonly" ></textarea></td>
+            <td width="1%">&nbsp;</td>
+          </tr>
+        </tbody>
+      </table></td>
+    </tr>
+	<tr>
+		<td height="40" align="center" valign="top" id="2"><table width="100%" border="0">
+  		  <tbody >
+    		<tr>
+				<td><a id="obfus_button" class="floating-button">Обфусцировать</a></td>
+			</tr>
+		  </tbody>
+		</table>
+		</td>
+	</tr>
+<table width="100%" border="0">
+  <tbody>
+    <tr>
+      <td width="1%"></td>
+      <td width="30%"></td>
+      <td width="4%"></td>
+	  <td width="30%"></td>
+	  <td width="4%"></td>
+	  <td width="30%"></td>
+	  <td width="1%"></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+	  <td>&nbsp;</td>
+	  <td>&nbsp;</td>
+	  <td>&nbsp;</td>
+	  <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+  </tbody>
+</table>
+</body>
+</html>
